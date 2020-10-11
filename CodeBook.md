@@ -5,7 +5,8 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 Here are the data for the project:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-Study Design
+Study Design:
+
 The data was downloaded from the link above and placed in the working directory. The subject, x, and y data text files
 were imported for both test and train. These were combined to create one data table. The data in the y files
 was composed of numbers which corresponded to names. So the numbers were replaced with the names.
@@ -14,13 +15,16 @@ reduced to only contain these variables along with their respective y label and 
 Finally the average was taken for each group with the same subject and y label (or activity). The final tidy data set
 includes the mean for each variable for each specfic subject and activity in a file called "finalTidyData.txt".
 
-Code Book
+Code Book:
+
 Subject data is a range 1-30 with no units.
 Activity data (y data) is a range 1-6 (no units) with corresponding names.
 
 The other variables selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. 
+
 - The units used for the accelerations (total and body) are 'g's (gravity of earth -> 9.80665 m/seg2).
 - The gyroscope units are rad/seg.
+
 These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered 
 using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. 
 Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) 
